@@ -5,18 +5,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopComponent } from './components/top/top.component';
 import { SongItemComponent } from './components/song-item/song-item.component';
+import { HttpClientModule } from '@angular/common/http';
+
+/// <reference path="../../node_modules/@types/spotify-api">
+
 
 @NgModule({
   declarations: [
     AppComponent,
     TopComponent,
-    SongItemComponent,
+    SongItemComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  //s: SpotifyApi.SearchForItemParameterObject = {
+    
+  //};
+}

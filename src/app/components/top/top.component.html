@@ -1,1 +1,19 @@
-<p>top works!</p>
+<app-song-item 
+    *ngFor='let song of top' 
+    [song]='song'
+    >
+</app-song-item>
+
+<button (click)='setSpotify()'>Spotify</button> <br/>
+<button (click)='setYouTube()'>YouTube</button>
+
+
+<iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/POSwzCFwUZ0" 
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+
+<iframe src="https://open.spotify.com/embed/track/305WCRhhS10XUcH6AEwZk6" width="300" height="380" 
+frameborder="0" allowtransparency="true" allow="encrypted-media">
+</iframe>
